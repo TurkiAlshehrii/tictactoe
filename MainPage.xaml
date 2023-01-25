@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToeGame.MainPage" BackgroundColor="White" x:Name="allPage">
+
+    <StackLayout>
+        <Frame  Padding="24" BackgroundColor="White" x:Name="frame">
+            <Label Text="Tic tac toe" HorizontalTextAlignment="Center" TextColor="Black" FontSize="42"
+                   FontAttributes="Bold" x:Name="frameText" FontFamily="myFavFont"/>
+        </Frame>
+
+
+
+        <Grid Margin="17,90,1,1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text=" Player1:" Grid.Column="0" Grid.Row="0" FontSize="30" TextColor="Black" x:Name="namePlayer1Text" FontFamily="myFavFont"/>
+
+            <Entry Placeholder="Your name " Grid.Column="0" Grid.Row="1" TextChanged="Entry_TextChanged" x:Name="Player1" FontFamily="myFavFont" WidthRequest="300" BackgroundColor="GhostWhite"/>
+
+
+
+
+
+        </Grid>
+
+
+
+
+        <Grid Margin="17,10,0,100">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Player2:" Grid.Column="0" Grid.Row="0" FontSize="30" TextColor="Black" x:Name="namePlayer2Text" FontFamily="myFavFont"/>
+
+            <Entry Placeholder="Your name " Grid.Column="0" Grid.Row="1" TextChanged="Entry_TextChanged" x:Name="Player2" FontFamily="myFavFont" WidthRequest="300" BackgroundColor="GhostWhite"/>
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button Text="Play" BackgroundColor="DarkBlue" Grid.Row="4" FontSize="25" 
+                TextColor="White" CornerRadius="4" Margin="75,0,75,0" Padding="7" 
+                FontAttributes="Bold" Clicked="click_navigationToAnotherPage" x:Name="btnPlay" FontFamily="myFavFont"/>
+
+
+        <Grid Padding="11,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Switch Toggled="Switch_darkMode" OnColor="Black" ThumbColor="White" x:Name="switchButton"/>
+            <Label Text="Dark Mode" Grid.Column="1" Padding="2" FontAttributes="Bold" FontSize="16" x:Name="darkSwitch" FontFamily="myFavFont"/>
+
+            <ImageButton Source="info.png" Grid.Row="0" Grid.Column="2" WidthRequest="5" HeightRequest="5" BackgroundColor="White" Padding="3" Clicked="ImageButton_ClickedForInfo" x:Name="imageButton"/>
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

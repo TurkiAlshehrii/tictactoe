@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToeGame.playPage" x:Name="allPage">
+    <ContentPage.Content>
+        <StackLayout>
+    
+                
+            <Grid Padding="11,3" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Player 1 :" TextColor="Black" FontSize="25" x:Name="player1Label" FontFamily="myFavFont"/>
+                <Label Grid.Row="1" FontSize="23" x:Name="showNamePlayer1" FontFamily="myFavFont"/>
+                <Label Text="Player 2 :" TextColor="Black" Grid.Row="2" FontSize="25" x:Name="player2Label" FontFamily="myFavFont"/>
+                <Label Grid.Row="3" FontSize="23" x:Name="showNamePlayer2" FontFamily="myFavFont"/>
+               
+                <Label Text="Round : " TextColor="Black" Grid.Column="4" Grid.Row="0" FontSize="24" x:Name="roundLabel" FontFamily="myFavFont"/>
+                <Label Grid.Row="0" Grid.Column="5" FontSize="25"  x:Name="showRound" Text="1" FontAttributes="Bold" TextColor="Black" FontFamily="myFavFont"/>
+            </Grid>
+
+
+            
+            
+            
+            
+            
+            
+            
+
+
+            <Grid Padding="40 , 7">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Frame  CornerRadius="5" Grid.Column="0" Grid.Row="0" WidthRequest="40" HeightRequest="40" x:Name="frame1" Padding="15">
+                    <Button  TextColor="Black"  FontSize="28" x:Name="choice1" Clicked="choice1_Clicked" FontAttributes="Bold"/>
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Column="1" Grid.Row="0" WidthRequest="40" HeightRequest="40" x:Name="frame2" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice2" Clicked="choice2_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Column="2" Grid.Row="0" WidthRequest="40" HeightRequest="40" x:Name="frame3" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice3" Clicked="choice3_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+
+                <Frame  CornerRadius="5" Grid.Row="1" Grid.Column="0" WidthRequest="40" HeightRequest="40" x:Name="frame4" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice4" Clicked="choice4_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Row="1" Grid.Column="1" WidthRequest="40" HeightRequest="40" x:Name="frame5" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice5" Clicked="choice5_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Row="1" Grid.Column="2" WidthRequest="40" HeightRequest="40" x:Name="frame6" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice6" Clicked="choice6_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+
+
+                <Frame  CornerRadius="5" Grid.Row="2" Grid.Column="0" WidthRequest="40" HeightRequest="40" x:Name="frame7" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice7" Clicked="choice7_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Row="2" Grid.Column="1" WidthRequest="40" HeightRequest="40" x:Name="frame8" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice8" Clicked="choice8_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+                <Frame  CornerRadius="5" Grid.Row="2" Grid.Column="2" WidthRequest="40" HeightRequest="40" x:Name="frame9" Padding="15">
+                    <Button  TextColor="Black" FontSize="28" x:Name="choice9" Clicked="choice9_Clicked" FontAttributes="Bold"/>
+
+                </Frame>
+
+            </Grid>
+
+
+            <Grid Padding="11,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+
+                </Grid.ColumnDefinitions>
+                <Label Text="Score" TextColor="Black" Grid.Column="2"  FontSize="33"  Margin="0,0,0,12" FontFamily="myFavFont" x:Name="scoreTitle"/>
+
+                <Label Text="Player 1 = " TextColor="Black" FontSize="25" Grid.Row="2" Margin="0,0,0,17" FontFamily="myFavFont" x:Name="namePlayer1ForScore"/>
+                <Label  Text="0" TextColor="Black" FontSize="25" Grid.Row="2 " Grid.Column="1" FontFamily="myFavFont" x:Name="scorePlayer1InPlay"/>
+
+
+                <Label Text="Player 2 = " TextColor="Black" FontSize="25" Grid.Row="3" FontFamily="myFavFont" x:Name="namePlayer2ForScore"/>
+                <Label  Text="0" TextColor="Black" FontSize="25" Grid.Row="3" Grid.Column="1" FontFamily="myFavFont" x:Name="scorePlayer2InPlay"/>
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

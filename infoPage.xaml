@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToeGame.infoPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+
+            <Frame BackgroundColor="White"  HeightRequest="685" HasShadow="True" x:Name="allPageFrame">
+
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="What is Tic tac toe ? " FontSize="27" FontFamily="myFavFont" TextColor="Black" x:Name="Header1"/>
+                    <Label Text="Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid." 
+                           FontFamily="myFavFont" Grid.Row="1" FontSize="17" Padding="1,6,2,8" x:Name="label1Info"/>
+
+                    <Frame BackgroundColor="Black" Grid.Row="2" Grid.Column="0" Padding="1" HasShadow="True" x:Name="fHr1"/>
+
+
+                    <Label Text="Can I change to dark mode ?" FontSize="25" FontFamily="myFavFont" TextColor="Black" Grid.Row="3" x:Name="Header2"/>
+                    <Label Text="Yes ! sure you can , On the home page there is a key or button that can be switch to DARK-MODE ." x:Name="label2Info"  Padding="1,6,2,8" Grid.Row="4" FontSize="18" FontFamily="myFavFont"/>
+                    <Frame BackgroundColor="Black" Grid.Row="5" Grid.Column="0" Padding="1" HasShadow="True" x:Name="fHr2"/>
+
+
+                    <Label Text="Team members" Grid.Row="6"  FontSize="30" FontFamily="myFavFont" TextColor="Black" HorizontalOptions="Center" x:Name="Header3"/>
+
+
+
+                    <Frame BackgroundColor="White" Grid.Row="7" CornerRadius="7"  x:Name="teamFrame">
+
+
+                        <ScrollView >
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+
+
+
+
+
+                                    <Image Source="tvtc.png"  Grid.Row="0" WidthRequest="50"/>
+
+                                <Label Text="Turki sultan Alshehri  [ Leader ]" Grid.Row="0" Grid.Column="1" FontFamily="myFavFont" Padding="4" x:Name="member1info"/>
+                                <Label Text="441204504" Grid.Row="0" Grid.Column="1" FontFamily="myFavFont" Padding="19" x:Name="detel1info"/>
+
+
+
+
+                                <Image Source="tvtc.png"   Grid.Row="1"  WidthRequest="50"/>
+
+                                <Label Text="Mohammad Nawaf Alhajri" Grid.Row="1" Grid.Column="1" FontFamily="myFavFont" Padding="4" x:Name="member2info"/>
+                                <Label Text="441126511" Grid.Row="1" Grid.Column="1" FontFamily="myFavFont" Padding="19" x:Name="detel2info"/>
+
+
+
+
+                                <Image Source="tvtc.png"  Grid.Row="2"  WidthRequest="50"/>
+
+                                <Label Text="Hussain Ahmed Alsetri" Grid.Row="2" Grid.Column="1" FontFamily="myFavFont" Padding="4" x:Name="member3info"/>
+                                <Label Text="441204514" Grid.Row="2" Grid.Column="1" FontFamily="myFavFont" Padding="19" x:Name="detel3info"/>
+
+
+
+
+                                <Image Source="tvtc.png"   Grid.Row="3"  WidthRequest="50"/>
+
+                                <Label Text="Mohammed Abdulrahman Alsfyani" Grid.Row="3" Grid.Column="1" FontFamily="myFavFont" Padding="4" x:Name="member4info"/>
+                                <Label Text="441204520" Grid.Row="3" Grid.Column="1" FontFamily="myFavFont" Padding="19" x:Name="detel4info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </Grid>
+                        </ScrollView>
+
+
+
+
+
+                    </Frame>
+
+                </Grid>
+
+
+
+            </Frame>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
